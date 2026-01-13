@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            height: 100vh;
+            overflow-y: hidden;
+            background-image: linear-gradient(to right, rgb(141, 141, 230), rgb(190, 63, 190));
+        }
+
+        .main {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #ffffff;
+            padding: 30px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(208, 123, 123, 0.1);
+            text-align: center;
+        }
+
+        
+        
+        button{
+            /* background:blueviolet; */
+            border:3px;
+            width:100%;
+            padding:10px;
+            border-radius: 24px;
+            cursor:pointer;
+            
+        }
+        button:hover{
+            background-color: blueviolet;
+        }
+        .input1{
+            border-top:0px;
+            border-right:0px;
+            border-left:0px;
+               width: 100%;
+            margin-bottom: 6px;
+        }
+        .username-label{
+            margin-bottom: 6px;
+        }
+        .password-label{
+            margin-bottom: 6px;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <div>
+        <div class="main">
+            <div>
+                <h2>Login </h2>
+            </div>
+            <div class="item1">
+                <div class="username-label">
+                    <label>User Name</label>
+                </div>
+                
+                <input type="text" class="input1" placeholder="Enter Text">
+            </div>
+            <div class="item2">
+                <div class="password-label">
+                    <label>Passward</label>
+                </div>
+               
+                <input type="password" class="input1" placeholder="Enter Password">
+            </div>
+            <div class="item3">
+                <div>
+                    <label>Forget Passward?</label>
+                </div>
+               
+            </div>
+            <div>
+                <button class="button">LOGIN</button>
+            </div>
+            <br>
+            <div>
+                or sign up using
+            </div>
+            <br><br>
+            <span>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google"></i>
+            </span>
+        </div>
+</body>
+
+</html>
