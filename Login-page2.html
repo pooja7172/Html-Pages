@@ -1,11 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div>Hi Pooja</div>
-</body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #6a7cff, #8e44ad);
+      }
+      .main {
+        width: 300px;
+        min-height: 400px;
+        padding: 30px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #6a7cff, #b2c4dd);
+        box-shadow: 2px 2px 5px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        align-items: center;
+        text-align: center;
+      }
+      .item1 {
+        font-size: 25px;
+        font-weight: 600;
+      }
+
+      .input {
+        width: 250px;
+        padding: 6px;
+
+        border-color: #ccc;
+        border-radius: 7px;
+      }
+      .button {
+        width: 250px;
+        padding: 6px;
+        border: none;
+        border-radius: 6px;
+      }
+      .b1 {
+        width: 80px;
+        padding: 6px;
+        background-color: transparent;
+        border: none;
+        border-radius: 7px;
+        color: black;
+      }
+      button:hover {
+        background-color: rgb(119, 119, 215);
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="item1">
+        <h4>Welcome Back</h4>
+      </div>
+      <div>Sign in to your account</div>
+      <div>
+        <input type="email" class="input" placeholder="Email address" />
+      </div>
+      <div>
+        <input type="password" class="input" placeholder="Password" />
+      </div>
+      <span>
+        <input type="checkbox" /> Remember me <a href="#">Forget password</a>
+      </span>
+      <div>
+        <button class="button">Sign In</button>
+      </div>
+      <div>
+        <span>
+          <button class="b1">Google</button><button class="b1">Github</button>
+        </span>
+      </div>
+      <div>Don't have an account? <a href="#">Sign up</a></div>
+    </div>
+  </body>
 </html>
