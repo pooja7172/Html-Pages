@@ -11,6 +11,7 @@
     <style>
       body{
         height: 100vh;
+        overflow: hidden;
       }
       .main{
         height:100vh;
@@ -19,17 +20,49 @@
         
       }
       .left-side{
-        flex:1;
-        width:40%;
+        flex: 0 0 50%;
+    
         flex-direction: column;
+        justify-content: center;
         padding: 20px;
         height:100%;
       }
-      .left-side img {
-          width: 100%;
+      .right-side{
+           flex:0 0 50%;
+      }
+      .right-side img {
+          width: 60%;
           height: 100%;
           object-fit: cover;
+      }
+      .welcome-text {
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         margin-top:15%;
+         text-align: center;
+      }
+      .input1{
+             padding:8px;
+             width:35%;
+             margin-left:10%;
+             border: 1px solid #ccc;
+             margin-right: 5px;;
+             background-color: transparent;
+             color:black;
+      }
+      .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
+.button{
+  padding: 10px;
+  color:white;
+  background-color: black;
+  width:80%;
+  margin-left:5px;
+}
+
 
 
        
@@ -40,37 +73,43 @@
     
       
       
-
         <div class="right-side">
-          <i class="fa-solid fa-snowflake"> giihan</i>
-       
-        <div>
-          <h1>Welcome back !</h1>
-          <p>the faster you fill ,the faster you get a ticket</p>
-        </div>
-        <div>
-          <label>Email</label>
-          <input type="email" placeholder="email" />
-        </div>
-        <div>
-          <label>password</label>
-          <input type="password" placeholder="password" />
-        </div>
-        <div><input type="checkbox" /> remember me forgot password</div>
-        <div>
-          <button>Sign In</button>
-        </div>
-        <div>
-          <button>
-            <i class="fa-brands fa-google"></i> Sign in with Google
-          </button>
-          
-        <div class="left-side">
           <img
             src="WhatsApp Image 2026-01-27 at 3.48.11 PM.jpeg"
             alt="My Image"
           />
         </div>
+
+        <div class="left-side">
+          <i class="fa-solid fa-snowflake"> giihan</i>
+       
+        <div class="welcome-text">
+          <h1>Welcome back !</h1>
+          <p>the faster you fill ,the faster you get a ticket</p>
+        </div>
+        <div>
+          <label>Email</label>"
+          <input type="email" class="input1"  style="margin-bottom:20px;"   placeholder = "email" />
+        </div>
+        <div>
+          <label>password</label>
+          <input type="password" class="input1"  style="margin-bottom:20px; "  placeholder="password" />
+        </div>
+        <div class="input">
+  <label>
+    <input type="checkbox">
+    Remember me
+  </label>
+  <a href="#">Forgot password?</a>
+</div>
+
+
+          <button class="button">Sign In</button>
+        </div>
+        <div>
+          <button>
+            <i class="fa-brands fa-google"></i> Sign in with Google
+          </button>
            </div>
 
         </div>
