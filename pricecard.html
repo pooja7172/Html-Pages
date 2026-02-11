@@ -12,7 +12,7 @@
       body {
         height: 100vh;
         overflow: hidden;
-        background-color: rgb(26, 6, 64);
+        background-color: rgb(5, 1, 12);
       }
       .main {
         color: white;
@@ -22,32 +22,87 @@
       }
       .box {
         border: 1px solid #ccc;
+        box-shadow: 2px 2px 2px #ccc;
         border-radius: 6px;
         width: 40%;
         padding: 20px;
-        
+        height: 78%;
+      }
+      .box2{
+        border: 1px solid goldenrod;
+        box-shadow: 2px 2px 3px goldenrod;
+        border-radius: 6px;
+        width: 40%;
+        padding: 20px;
+        height: 78%;
       }
       .btn {
         border: 1px solid #ccc;
         border-radius: 19px;
         background: transparent;
-        color:white;
-        padding:9px;
+        color: white;
+        padding: 9px;
       }
       .btn2 {
         border: 1px solid #ccc;
         border-radius: 19px;
         background: transparent;
-       
-        color:rgb(136, 164, 51);
-        padding:9px;
+        color:goldenrod;
+        padding: 9px;
       }
-      .container{
-        display:flex;
-        gap:15px;
-        margin-top:35px;
-        height:75vh;
-     
+      .btn3 {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: transparent;
+        text-transform: capitalize;
+        color: white;
+        padding: 9px;
+        width: 100%;
+        margin-top: 20px;
+      }
+      .btn4{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: transparent;
+        background-color:goldenrod;
+        text-transform: capitalize;
+        color: black;
+        padding: 9px;
+        font-weight: 600;
+        width: 100%;
+        margin-top: 20px;
+      }
+      .btn5 {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: transparent;
+        background-color: white;
+        text-transform: capitalize;
+        color:black;
+        padding: 9px;
+        width: 100%;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      .top {
+        margin-top: 60px;
+        text-transform: capitalize;
+      }
+      .container {
+        display: flex;
+        gap: 15px;
+        width: 80%;
+        align-items: center;
+        margin-right: 19px;
+        margin: 35px auto;
+        height: 75vh;
+      }
+      .icon {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        font-family: sans-serif;
+        margin-top: 15px;
       }
     </style>
     <body>
@@ -63,66 +118,72 @@
           <div class="box">
             <button class="btn">Personal</button>
             <h1>FREE</h1>
-            <span>to discover our product and its features</span>
-            <div>
-              <i class="fa-regular fa-circle-check"> unlimited project</i>
+            <span class="top">to discover our product and its features</span>
+            <div class="icon">
+              <div>
+                <i class="fa-regular fa-circle-check"> unlimited project</i>
+              </div>
+              <div>
+                <i class="fa-regular fa-circle-check">
+                  share with 5 team members
+                </i>
+              </div>
+              <div>
+                <i class="fa-regular fa-circle-check"> sync across devices </i>
+              </div>
+              <div>
+                <i class="fa-regular fa-circle-check">
+                  20GB individual data each user</i
+                >
+              </div>
             </div>
-            <div>
-              <i class="fa-regular fa-circle-check">
-                share with 5 team members
-              </i>
-            </div>
-            <div>
-              <i class="fa-regular fa-circle-check"> sync across devices </i>
-            </div>
-            <div>
-              <i class="fa-regular fa-circle-check">
-                20GB individual data each user</i
-              >
-            </div>
-            <button>Learn more</button>
+            <button class="btn3">Learn more</button>
           </div>
-          <div class="box">
+          <div class="box2">
             <button class="btn2">Personal pro</button>
             <h1>$20</h1>
-            <span> the best option for individal notetaker</span>
-            <div>
-              <i class="fa-regular fa-circle-check"> unlimited project</i>
+            <span class="top"> the best option for individal notetaker</span>
+            <div class="icon">
+              <div>
+                <i class="fa-regular fa-circle-check"> unlimited project</i>
+              </div>
+              <div>
+                <i class="fa-regular fa-circle-check">
+                  share with 25 team members
+                </i>
+              </div>
+              <div>
+                <i class="fa-regular fa-circle-check"> sync across devices </i>
+              </div>
+              <div>
+                <i class="fa-regular fa-circle-check">
+                  50GB individual data each user</i
+                >
+              </div>
             </div>
-            <div>
-              <i class="fa-regular fa-circle-check">
-                share with 25 team members
-              </i>
-            </div>
-            <div>
-              <i class="fa-regular fa-circle-check"> sync across devices </i>
-            </div>
-            <div>
-              <i class="fa-regular fa-circle-check">
-                50GB individual data each user</i
-              >
-            </div>
-            <button>try for free</button>
+            <button class="btn4">try for free</button>
           </div>
           <div class="box">
-            <button class="btn"> Team </button>
+            <button class="btn">Team</button>
             <h1>$50</h1>
-            <span> best suited for larger notetaker</span>
-            <div>
-              <i class="fa-regular fa-circle-check"> unlimited project</i>
+            <span class="top"> best suited for larger notetaker</span>
+            <div class="icon">
+              <div>
+                <i class="fa-regular fa-circle-check"> unlimited project</i>
+              </div>
+              <div>
+                <i class="fa-regular fa-circle-check"> share team members </i>
+              </div>
+              <div>
+                <i class="fa-regular fa-circle-check"> sync across devices </i>
+              </div>
+              <div>
+                <i class="fa-regular fa-circle-check">
+                  unlimited individual data user</i
+                >
+              </div>
             </div>
-            <div>
-              <i class="fa-regular fa-circle-check"> share team members </i>
-            </div>
-            <div>
-              <i class="fa-regular fa-circle-check"> sync across devices </i>
-            </div>
-            <div>
-              <i class="fa-regular fa-circle-check">
-                unlimited individual data each user</i
-              >
-            </div>
-            <button>try for free</button>
+            <button class="btn5">try for free</button>
           </div>
         </div>
       </div>
