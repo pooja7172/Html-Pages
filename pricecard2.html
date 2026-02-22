@@ -9,64 +9,102 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <style>
-       body {
-         height: 100vh;
-         overflow: hidden;
-         background-color: rgb(240, 236, 236);
-       }
-       .box {
-         border: 1px solid #ccc;
-         height: 100%;
-         width: 40%;
-         padding: 29px;
-       }
-       .container{
+      body {
+        height: 100vh;
+        overflow: hidden;
+        background-color: rgb(240, 236, 236);
+      }
+      .box {
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        height: 100%;
+        width: 40%;
+        margin-top: 78px;
+        padding: 29px;
+      }
+      .container {
         display: flex;
-         gap: 15px;
-         width: 80%;
-         align-items: center;
-         margin-right: 19px;
-         margin: 35px auto;
-         height: 60vh;
-       }
-       .heading {
-         font-size: 40px;
-         font-weight: 600;
-       }
-       .bx1{
-         border:1px,solid,rgb(220, 206, 206);
-         height: 60vh;
-         width:100%;
-         margin-top:15px;
-      
-         display:flex;
-         flex-direction: column;
-         border-radius: 30px;
-         gap:19px;
-       }
+        gap: 15px;
+        width: 80%;
+        align-items: center;
+        margin-right: 19px;
+
+        margin: 35px auto;
+        height: 60vh;
+      }
+      .heading {
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .bx1 {
+        border: 1px, solid, rgb(220, 206, 206);
+        height: 60vh;
+        width: 100%;
+        margin-top: 15px;
+
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        gap: 19px;
+      }
+      .popular-button {
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 10 px;
+        background-color: goldenrod;
+        color: white;
+        border: 1px solid #ccc;
+      }
+      .top {
+        text-align: center;
+        margin-bottom: 14px;
+      }
+      .btn {
+        border: 1px solid #ccc;
+        padding: 16px;
+        border-radius: 20px;
+        font-weight: bold;
+        text-transform: capitalize;
+        weight:50%;
+      }
+       .btn1 {
+        border: 1px solid #ccc;
+        padding: 16px;
+        border-radius: 20px;
+        font-weight: bold;
+        text-transform: capitalize;
+        background-color: rgb(93, 93, 202);
+        color: white;
+      }
     </style>
     <body>
       <div class="main">
-        <div>
+        <div class="top">
           <h1>plans & pricing</h1>
-          <div>
+          <div class="top1">
             start free with a 2-week trial.pick the plan with the tools you
             need.
           </div>
-          <div>unlimited mapping and row changes with every plan.</div>
+          <div class="top1">
+            unlimited mapping and row changes with every plan.
+          </div>
         </div>
         <div class="container">
           <div class="box">
-             <div>personal</div>
+            <div>personal</div>
             <div class="bx1">
-             
               <span>
                 <span class="heading">$5</span>
                 /monthly</span
               >
 
-              <div>250 records in sync</div>
-              <button>start for free</button>
+              <div>
+                <span style="background-color: #ccc">250 </span>
+                <span style="text-decoration-line: underline"
+                  >records in sync</span
+                >
+              </div>
+              <button class="btn">start for free</button>
               <div><i class="fa-solid fa-check"></i> all connectors</div>
               <div><i class="fa-solid fa-check"></i>2-way sync</div>
               <div><i class="fa-solid fa-check"></i>real-time updates</div>
@@ -77,20 +115,27 @@
           <div class="box">
             <div>
               starter
-              <button>popular</button>
+              <button class="popular-button">
+                <i class="fa-solid fa-fire"></i>popular
+              </button>
             </div>
             <div class="bx1">
               <span>
-              <span class="heading">$20</span>
-              /monthly</span
-            >
-            <div>500 records in sync</div>
-            <button>start for free</button>
-            <div><i class="fa-solid fa-check"></i> all connectors</div>
-            <div><i class="fa-solid fa-check"></i>2-way sync</div>
-            <div><i class="fa-solid fa-check"></i>real-time updates</div>
-            <div><i class="fa-solid fa-check"></i>automated monitoring</div>
-            <div><i class="fa-solid fa-check"></i> email support</div>
+                <span class="heading">$20</span>
+                /monthly</span
+              >
+              <div>
+                <span style="background-color: #ccc">500 </span>
+                <span style="text-decoration-line: underline"
+                  >records in sync</span
+                >
+              </div>
+              <button class="btn1">start for free</button>
+              <div><i class="fa-solid fa-check"></i> all connectors</div>
+              <div><i class="fa-solid fa-check"></i>2-way sync</div>
+              <div><i class="fa-solid fa-check"></i>real-time updates</div>
+              <div><i class="fa-solid fa-check"></i>automated monitoring</div>
+              <div><i class="fa-solid fa-check"></i> email support</div>
             </div>
           </div>
           <div class="box">
@@ -98,16 +143,23 @@
               <div>pro</div>
               <div class="bx1">
                 <div>
-                <span class="heading">$40</span>
-                /monthly
-              </div>
-              <div>1000 records in sync</div>
-              <button>start for free</button>
-              <div><i class="fa-solid fa-check"></i>all connectors</div>
-              <div><i class="fa-solid fa-check"></i> 2-way sync</div>
-              <div><i class="fa-solid fa-check"></i>real-time updates</div>
-              <div><i class="fa-solid fa-check"></i> automated monitoring</div>
-              <div><i class="fa-solid fa-check"></i> priority support</div>
+                  <span class="heading">$40</span>
+                  /monthly
+                </div>
+                <div>
+                  <span style="background-color: #ccc">1000 </span>
+                  <span style="text-decoration-line: underline"
+                    >records in sync</span
+                  >
+                </div>
+                <button class="btn">start for free</button>
+                <div><i class="fa-solid fa-check"></i>all connectors</div>
+                <div><i class="fa-solid fa-check"></i> 2-way sync</div>
+                <div><i class="fa-solid fa-check"></i>real-time updates</div>
+                <div>
+                  <i class="fa-solid fa-check"></i> automated monitoring
+                </div>
+                <div><i class="fa-solid fa-check"></i> priority support</div>
               </div>
             </div>
           </div>
