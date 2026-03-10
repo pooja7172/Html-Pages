@@ -17,10 +17,9 @@
       .box {
         border: 1px solid #ccc;
         border-radius: 30px;
-        height: 100%;
+
         width: 40%;
         margin-top: 78px;
-        padding: 29px;
       }
       .container {
         display: flex;
@@ -30,7 +29,6 @@
         margin-right: 19px;
 
         margin: 35px auto;
-        height: 60vh;
       }
       .heading {
         font-size: 40px;
@@ -38,10 +36,8 @@
       }
       .bx1 {
         border: 1px, solid, rgb(220, 206, 206);
-        height: 60vh;
         width: 100%;
-        margin-top: 15px;
-
+        background-color: white;
         display: flex;
         flex-direction: column;
         border-radius: 30px;
@@ -49,7 +45,7 @@
       }
       .popular-button {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         border-radius: 10 px;
         background-color: goldenrod;
         color: white;
@@ -58,23 +54,32 @@
       .top {
         text-align: center;
         margin-bottom: 14px;
+        font-size: 20px;
       }
       .btn {
         border: 1px solid #ccc;
         padding: 16px;
+        margin-bottom: 20px;
         border-radius: 20px;
         font-weight: bold;
         text-transform: capitalize;
-        weight:50%;
+        weight: 50%;
       }
-       .btn1 {
+      .btn1 {
         border: 1px solid #ccc;
         padding: 16px;
         border-radius: 20px;
+        margin-bottom: 20px;
         font-weight: bold;
         text-transform: capitalize;
         background-color: rgb(93, 93, 202);
         color: white;
+      }
+
+      .centerbox {
+        border: 2px solid blue;
+      
+        background-color: blue;
       }
     </style>
     <body>
@@ -90,8 +95,8 @@
           </div>
         </div>
         <div class="container">
-          <div class="box">
-            <div>personal</div>
+          <div class="box" style="margin-right: 18px">
+            <div style="padding: 10px">personal</div>
             <div class="bx1">
               <span>
                 <span class="heading">$5</span>
@@ -100,19 +105,18 @@
 
               <div>
                 <span style="background-color: #ccc">250 </span>
-                <span style="text-decoration-line: underline"
+                <span style="text-decoration: underline dotted"
                   >records in sync</span
                 >
               </div>
               <button class="btn">start for free</button>
-              <div><i class="fa-solid fa-check"></i> all connectors</div>
-              <div><i class="fa-solid fa-check"></i>2-way sync</div>
-              <div><i class="fa-solid fa-check"></i>real-time updates</div>
-              <div><i class="fa-solid fa-check"></i> automated monitoring</div>
+              <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i> all connectors</div>
+              <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i>2-way sync</div>
+              <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i>real-time updates</div>
+              <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i> automated monitoring</div>
             </div>
           </div>
-
-          <div class="box">
+          <div class="box centerbox">
             <div>
               starter
               <button class="popular-button">
@@ -126,21 +130,24 @@
               >
               <div>
                 <span style="background-color: #ccc">500 </span>
-                <span style="text-decoration-line: underline"
+                <span style="text-decoration: underline dotted"
                   >records in sync</span
                 >
               </div>
               <button class="btn1">start for free</button>
-              <div><i class="fa-solid fa-check"></i> all connectors</div>
-              <div><i class="fa-solid fa-check"></i>2-way sync</div>
-              <div><i class="fa-solid fa-check"></i>real-time updates</div>
-              <div><i class="fa-solid fa-check"></i>automated monitoring</div>
-              <div><i class="fa-solid fa-check"></i> email support</div>
+              <div>
+                <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i> all connectors</div>
+                <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i>2-way sync</div>
+                <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i>real-time updates</div>
+                <div style="margin-bottom:15px">
+                  <i class="fa-solid fa-check"></i> automated monitoring
+                </div>
+              </div>
             </div>
           </div>
           <div class="box">
             <div>
-              <div>pro</div>
+              <div style="padding: 10px">pro</div>
               <div class="bx1">
                 <div>
                   <span class="heading">$40</span>
@@ -148,18 +155,18 @@
                 </div>
                 <div>
                   <span style="background-color: #ccc">1000 </span>
-                  <span style="text-decoration-line: underline"
+                  <span style="text-decoration: underline dotted"
                     >records in sync</span
                   >
                 </div>
                 <button class="btn">start for free</button>
-                <div><i class="fa-solid fa-check"></i>all connectors</div>
-                <div><i class="fa-solid fa-check"></i> 2-way sync</div>
-                <div><i class="fa-solid fa-check"></i>real-time updates</div>
-                <div>
+                <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i>all connectors</div>
+                <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i> 2-way sync</div>
+                <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i>real-time updates</div>
+                <div style="margin-bottom:15px">
                   <i class="fa-solid fa-check"></i> automated monitoring
                 </div>
-                <div><i class="fa-solid fa-check"></i> priority support</div>
+                <div style="margin-bottom:15px"><i class="fa-solid fa-check"></i> priority support</div>
               </div>
             </div>
           </div>
